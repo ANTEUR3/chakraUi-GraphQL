@@ -12,14 +12,16 @@ const Layout = () => {
   }
   return (
     <div>
-        <Flex justify={'space-between'} px={'50px'} py={'10px'} alignItems={'center'}>
-            <Text fontSize={'25px'}>Omran-Cars</Text>
+        <Flex justify={'space-between'} px={'350px'} py={'10px'} pt={'10px'} alignItems={'center'}>
+            <Heading fontSize={'25px'}>Omran-Cars</Heading>
             <HStack spacing={'20px'} >
                 <Text sx={FeaturesStyle} fontSize={'20px'}>Home</Text>
                 <Text sx={FeaturesStyle} fontSize={'20px'}>About</Text>
                 <Text sx={FeaturesStyle} fontSize={'20px'}>Contact</Text>
+                   <Text sx={FeaturesStyle} fontSize={'20px'}>Features</Text>
                 
             </HStack>
+            <Button color={'white'} bg={'yellow.500'} borderRadius={'lg'} px={'15px'}>Brows</Button>
             
         </Flex>
         <Outlet/>
